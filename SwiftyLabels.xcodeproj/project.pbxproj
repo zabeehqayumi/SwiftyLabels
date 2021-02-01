@@ -16,6 +16,7 @@
 		51949BCD25C7A0D7004D5A21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51949BCB25C7A0D7004D5A21 /* Main.storyboard */; };
 		51949BCF25C7A0DB004D5A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51949BCE25C7A0DB004D5A21 /* Assets.xcassets */; };
 		51949BD225C7A0DB004D5A21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51949BD025C7A0DB004D5A21 /* LaunchScreen.storyboard */; };
+		51949BDB25C7A71D004D5A21 /* SwiftyCoolLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51949BDA25C7A71D004D5A21 /* SwiftyCoolLabels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		51949BCE25C7A0DB004D5A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51949BD125C7A0DB004D5A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51949BD325C7A0DB004D5A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51949BDA25C7A71D004D5A21 /* SwiftyCoolLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyCoolLabels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				51949BA625C79EFE004D5A21 /* SwiftyLabels.h */,
 				51949BA725C79EFE004D5A21 /* Info.plist */,
+				51949BDA25C7A71D004D5A21 /* SwiftyCoolLabels.swift */,
 			);
 			path = SwiftyLabels;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					51949BA225C79EFE004D5A21 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					51949BAB25C79EFE004D5A21 = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51949BDB25C7A71D004D5A21 /* SwiftyCoolLabels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		51949BB825C79EFE004D5A21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zabeeh.SwiftyLabels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		51949BB925C79EFE004D5A21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -484,6 +492,7 @@
 		51949BBB25C79EFE004D5A21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLabelsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +510,7 @@
 		51949BBC25C79EFE004D5A21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLabelsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
